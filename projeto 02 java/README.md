@@ -1,4 +1,7 @@
 # poolarah
+
+obs: eu havia enviado o arquivo no sábado, dia 05/12, mas depois da aula de hoje, 07/12, percebi que tinha feito algumas coisinhas erradas, então consertei e enviei novamente:)
+
 Então, vou começar contextualizando rapidinho: eu era boa em programação no começo do semestre, mas quando chegou em repetição, eu senti muita dificuldade. Com vetor, foi a mesma coisa, mas conforme foi passando o semestre e eu fui conversando com alguns amigos, pedindo ajuda em alguns códigos, a prática me levou não a perfeição, mas a uma nota boa. Quando começou POO, confesso que fiquei meio perdida. Não estava entendendo muito bem o conceito do objeto em si, e os atributos e métodos. Aliei as aulas da cadeira com as do Guanabara, que já havia assistido antes em repetição, e as coisas foram ficando mais claras.
 
 De toda forma, nesse primeiro projeto, eu optei por construir um programa onde o meu objeto é um cantor. Suas atribuições são as coisas necessárias para que ele exerça sua profissão e os métodos são sua rotina.

@@ -5,29 +5,29 @@ package idol;
 import java.util.Scanner;
 
 public class Idol {
-    int potenciavocal;
+    int potenciaVocal;
     int energia;
-    boolean sPreguiça = true; // não está com preguiçca
-    boolean nLesionado = true; // não está lesionado
+    boolean sPreguiça; // não está com preguiçca
+    boolean nLesionado; // não está lesionado
     
-    Idol(int potenciavocal, int energia, boolean sPreguiça, boolean nLesionado){
-        this.potenciavocal = potenciavocal;
+    Idol(int potenciaVocal, int energia, boolean sPreguiça, boolean nLesionado){
+        this.potenciaVocal = potenciaVocal;
         this.energia = energia;
         this.sPreguiça = sPreguiça;
         this.nLesionado = nLesionado;
     }
     
     void gravar () {
-        if (potenciavocal > 0) {
+        if (potenciaVocal > 0) {
             System.out.println("Gravando!");
-            potenciavocal -= 1;
+            potenciaVocal -= 1;
             energia -=1;
         } else {
             System.out.println("Cof, cof! Preciso de um copo d'água!");
         }
     }
     
-    void postarselca () {
+    void postarSelca () {
         if (sPreguiça == false && energia > 0) {
             System.out.println("Diga xis!");
         } else {
@@ -38,7 +38,7 @@ public class Idol {
     void descansar() {
         System.out.println("Mimindo");
         energia +=1;
-        potenciavocal +=1;
+        potenciaVocal +=1;
         sPreguiça = false;
     }
     
@@ -52,41 +52,46 @@ public class Idol {
     }
     
     public String toString() {
-        return "Donghyuck : pv:" + potenciavocal + " energia:" + energia + " lesionado?" + nLesionado + " preguiçoso?" + sPreguiça;
+        return "Donghyuck : pv:" + potenciaVocal + " energia:" + energia + " lesionado?" + nLesionado + " preguiçoso?" + sPreguiça;
     }
     
     
     public static void main(String[] args) {
         
         Scanner leitor = new Scanner(System.in);
-        
-        System.out.println("Qual a potência vocal do Donghyuck?");
-        int potenciavocal = leitor.nextInt();
-        System.out.println("Quanto de energia o Donghyuck tem?");
-        int energia = leitor.nextInt();
-        System.out.println("Donghyuck está saudável?");
-        boolean nLesionado = leitor.nextBoolean();
-        System.out.println("Donghyuck está sem peguiça de fazer as coisas?");
-        boolean sPreguiça = leitor.nextBoolean();
+
+        Idol donghyuck = new Idol(6, 5, false, false);
+
+        while(true) {
+			String line = leitor.nextLine();
+			String input[] = line.split(" ");
+			if (input[0].equals("end")) {
+				System.out.println("fim");
+				break;
+			}
+			
+			else if (input[0].equals("gravar")) {
+				donghyuck.gravar();
+				System.out.println(donghyuck);
+			}
+			
+			else if (input[0].equals("postarselca")) {
+				donghyuck.postarSelca();
+				System.out.println(donghyuck);
+			}
+			
+			else if (input [0].equals("descansar")) {
+				donghyuck.descansar();
+				System.out.println(donghyuck);
+			}
+			
+			else if (input [0].equals("dancar")) {
+				donghyuck.dançar();
+				System.out.println(donghyuck);
+			}
+		}
         
         leitor.close();
-        
-        Idol donghyuck = new Idol(potenciavocal, energia, nLesionado, sPreguiça);
-        
-        System.out.println(donghyuck);
-        donghyuck.gravar();
-        donghyuck.gravar();
-        donghyuck.gravar();
-        donghyuck.gravar();
-        donghyuck.gravar();
-        System.out.println(donghyuck); // depois daqui, o dondhyuck, mesmo não estando lesionado, só pode dançar mais uma vez, porque sua energia vai acabar
-        donghyuck.dançar();
-        donghyuck.dançar();
-        System.out.println(donghyuck);
-        donghyuck.postarselca();
-        donghyuck.descansar();
-        donghyuck.descansar();
-        donghyuck.postarselca();
     }
     
 }
