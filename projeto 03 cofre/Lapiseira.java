@@ -1,5 +1,7 @@
 package lapiseira;
 
+import java.util.Scanner;
+
 class Grafite {
     float calibre;
     String dureza;
@@ -50,6 +52,8 @@ public class Lapiseira {
     }
     
     public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in)
+        
         Lapiseira lapiseira = new Lapiseira(0.5f);
         System.out.println(lapiseira);
         lapiseira.inserir(new Grafite(0.5f, "HB", 4));
