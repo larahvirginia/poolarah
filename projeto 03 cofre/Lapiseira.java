@@ -52,10 +52,34 @@ public class Lapiseira {
     }
     
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in)
+        Scanner leitor = new Scanner(System.in);
         
         Lapiseira lapiseira = new Lapiseira(0.5f);
-        System.out.println(lapiseira);
-        lapiseira.inserir(new Grafite(0.5f, "HB", 4));
+        // lapiseira.inserir(new Grafite(0.5f, "HB", 4));
+        
+        while (true) {
+            String line = leitor.nextLine();
+            String input[] = line.split(" ");
+            if (input[0].equals("end")) {
+                System.out.println("fim");
+                break;
+            }
+            
+            else if (input[0].equals("inserir")) {
+                lapiseira.inserir(new Grafite());
+                System.out.println(lapiseira);
+            }
+            
+            else if (input[0].equals("remover")) {
+                lapiseira.remover();
+                System.out.println(lapiseira);
+            }
+            
+            else if (input[0].equals("escrever")) {
+                lapiseira.escrever();
+                System.out.println(lapiseira);
+            }
+        }
+        leitor.close();
     }
 }
