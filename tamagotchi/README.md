@@ -1,1 +1,5 @@
-# poolarah
+Com o projeto do Tamagotchi, consegui exercitar os métodos especiais Get e Set. A princípio, achei complicadinho, como sempre, mas conforme assistia a aula e usava alguns outros materiais de estudo — como a apostila e vídeo aulas —, consegui entender a lógica!
+
+Dessa vez, fiz em conjunto com um colega de sala, o Pedro. Levamos uma tarde praticamente para fazer toda a parte bruta, mas ficamos em dúvida em algumas questões, então pedimos para que o professor fizesse algumas correções durante a aula. Depois disso, consertamos os erros que cometemos após as explicações na hora da aula e pedimos ajuda no Discord também com alguns outros detalhes que não estavam dando certo.
+
+A questão dos atributos privados e públicos ficou mais clara na minha cabeça, assim como os métodos Get e Set. Sinto que cometemos alguns errinhos bestas, mas que acabam por comprometer todo o código e impedir o seu funcionamento. De toda forma, a cada código sinto também que vou me familiarizando com a linguagem. Mesmo que cada semana seja um novo desafio, acabo criando uma bagagem de aprendizado e acumulando-a com o passar do tempo.
