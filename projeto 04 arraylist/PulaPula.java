@@ -12,7 +12,6 @@ class Crianca {
 
     String getNome() {
         return nome;
-
     }
 
     int getIdade() {
@@ -38,18 +37,18 @@ public class PulaPula {
         System.out.println("fila de espera: " + esperando);
         System.out.println("brincando no pula pula: " + brincando);
     }
+
     // sai do vetor esperando pro brincando
     void entrar() {
         brincando.add(esperando.get(0));
         esperando.remove(esperando.get(0));
-
     }
+
     // sai do vetor brincando pro esperando (final a fila) 
     void sair() {
         esperando.add(brincando.get(0));
         brincando.remove(brincando.get(0));
     }
-
 
     public static void main(String[] args) {
         PulaPula trampolim = new PulaPula();
@@ -71,7 +70,6 @@ public class PulaPula {
                 trampolim.mostrar();
             }
         }
-
         leitor.close();
     }
 }
