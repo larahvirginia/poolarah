@@ -1,1 +1,5 @@
-# poolarah
+Assim como o projeto passado, fiz com o Pedro! Nós optamos por construir o do Pula Pula, porque achamos mais fácil do que o do Contato :)
+
+Como o esperado, usamos duas classes, a Criança e o Pula Pula, onde uma continha a outra — o pula pula contém as crianças. Seguimos o Diagrama e colocamos os atributos da classe Criança como privado e usamos o get para conseguir dar acesso a esses atributos. Criamos os vetores, um referente à fila de espera e outro referente às crianças que brincavam dentro do pula-pula, e também os métodos de entrar e sair, tirando e adicionando as crianças às filas.
+
+Demoramos algumas horinhas, cerca de três. Acho que a maior dificuldade foi porque estávamos com algumas dúvidas quanto à localização dos vetores, então pedimos ajuda a um colega, e deu tudo certinho. Durante o recesso, tentarei exercitar ainda mais a questão dos vetores! Está claro na minha cabeça a lógica, mas acho que ainda precisa de mais prática, e programação é sobre isso, né? :)
