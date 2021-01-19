@@ -1,0 +1,7 @@
+Eu e o Pedro fizemos o projeto das Tarifas. No começo, achamos ele mais fácil que o Junk Food, mas depois de tanto quebrar a cabeça pra fazer esse código, não tenho tanta certeza disso kakaka.
+
+Como em todo projeto, nós abrimos uma sala no Google Meet e confesso que ficamos umas horinhas trabalhando nessa peste, viu. Nós utilizamos os vetores, mas, sinceramente, pareceu que o ponto da questão nem era esse, a gente trabalhou bem mais lógica de construção nesse projeto, se é que posso falar assim. Pedimos ajuda, além do professor, à um amigo do Pedro. Ele nos ajudou no método do estorno, mas depois notamos que aquele não era o jeito correto de se fazer, porque a gente estava percorrendo o vetor com um for, mas o estorno passa o índice, então não era necessário! No final das contas, era bem mais fácil do que parecia, acho que a gente se embolou porque passamos tanto tempo fazendo, que quando chegamos no último método, já não estávamos raciocinando muito bem direito kkkk.
+
+Enfim, conseguimos finalizar o projeto. Levamos uns 3 dias, mas, obviamente, não direto; nesses 3 dias, trabalhamos no total por volta de 3/4 horas, juntando todos os ajustes que fizemos.
+
+Foi um desafio enorme! Mas conseguimos ter mais noção de lógica. Nos familiarizamos ainda mais com os vetores e como eles funcionam. E quanto às dificuldades, acho que a maior foi na parte do método que fizemos para adicionar as operações, mas de resto, mesmo com muita dor de cabeça, conseguimos deixar tudo certinho!
