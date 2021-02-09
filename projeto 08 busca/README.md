@@ -1,0 +1,7 @@
+Eu e o Pedro fizemos o projeto Busca com base no que foi lecionado nas aulas.
+
+A princípio, nós tivemos algumas dificuldades bem pontuais, mas acredito que possa ser porque não fizemos o projeto do Contato, e sim do PulaPula, que basicamente tinha a mesma lógica, então ainda não estávamos acostumados com a lógica da agenda telefônica. Como sempre, abrimos uma sala no Google Meet e começamos a montar o nosso código.
+
+Deu um trabalhinho, mas depois de quebrar a cabeça com algumas coisinhas bestas, como sempre, nós conseguimos finalizar o projeto. Pedimos ajuda no discord, porque não estávamos conseguindo passar os fones e um dos integrantes do grupo nos ajudou. Tivemos uma dificuldade na questão do id, porque estávamos passando ele “na marra”, sem perceber que podíamos usar um for para printar com o índice correspondente ao elemento dentro do vetor.
+
+Levamos em torno de uns 3 a 4 dias nesse código, passando umas duas horas em cada dia trabalhando nele, levando em consideração as alterações que fizemos depois que ele já estava “bruto”. Como sempre, o aprendizado vem da familiaridade que reforçamos com a lógica de vetores, cada vez que fazemos um projeto novo, encontramos dificuldades diferentes das que tínhamos no código anterior, ou seja, as coisas que nos atrapalhavam nos projetos antes desse, não atrapalham mais e dão espaço para que novas dúvidas possam ser sanadas.

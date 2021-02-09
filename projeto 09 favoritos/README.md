@@ -1,0 +1,2 @@
+Eu e o Pedro, como sempre, usamos a mesma tática de abrir uma sala no Google Meet e fazer o projeto juntos.
+Esse foi beem mais fácil do que os outros, a gente levou cerca de 2 a 3 horas pra finalizar, foi o projeto que a gente fez em menos tempo! Nem acredito. Não tivemos muitas dificuldades, só nos acostumamos com a lógica dos mapas, mas foi muito tranquilo! Tínhamos uma boa base por conta dos projetos antigos.
