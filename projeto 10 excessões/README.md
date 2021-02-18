@@ -1,0 +1,1 @@
+As excessões eu fiz sozinha, com base no que o professor havia dito na sala. Aproveitei o projeto dos Favoritos e apliquei as excessões nele!

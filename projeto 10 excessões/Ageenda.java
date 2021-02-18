@@ -53,7 +53,7 @@ class Contato {
 
     public void addFone (String label, String numero) {
         if(!Fone.validar(numero)) {
-            System.out.println("fail: esse número não é valido");
+            throw new RuntimeException("fail: esse número não é valido");
         }
         fones.add(new Fone(label, numero));
     }
@@ -117,7 +117,7 @@ public class Ageenda {
     Contato getContato(String nome) {
         Contato contato = contatos.get(nome);
         if (contato == null) {
-            System.out.println("contato não existe");
+            throw new RuntimeException("contato não existe");
         } return contato;
     }
 
@@ -157,36 +157,40 @@ public class Ageenda {
         Scanner leitor = new Scanner(System.in);
 
         while (true) {
-            String line = leitor.nextLine();
-            String [] ui = line.split(" ");
-            if (ui[0].equals("fim")) {
-                break;
-            } else if (ui[0].equals("addcontato")) {
-                List <Fone> fones = new ArrayList <>();
-                for (int i = 2; i < ui.length; i++) {
-                    fones.add(new Fone(ui[i]));
-                } agenda.addContato((ui[1]), fones);
-                System.out.print(agenda);
-            } else if (ui[0].equals("getcontatos")) {
-                System.out.print(agenda);
-            } else if (ui[0].equals("rmcontato")) {
-                agenda.rmContato(ui[1]);
-                System.out.println(agenda);
-            } else if (ui[0].equals("getcontato")) {
-                agenda.getContato(ui[1]);
-                System.out.print(agenda);
-            } else if (ui[0].equals("procurar")) {
-                agenda.procurar(ui[1]);
-                System.out.print(agenda);
-            } else if (ui[0].equals("favoritar")) {
-                agenda.favoritar(ui[1]);
-                System.out.println(agenda);
-            } else if (ui[0].equals("desfavoritar")) {
-                agenda.desfavoritar(ui[1]);
-                System.out.println(agenda);
-            } else if (ui[0].equals("favoritos")) {
-                System.out.println(agenda.getFavoritos());
-            }   
+            try {
+                String line = leitor.nextLine();
+                String [] ui = line.split(" ");
+                if (ui[0].equals("fim")) {
+                    break;
+                } else if (ui[0].equals("addcontato")) {
+                    List <Fone> fones = new ArrayList <>();
+                    for (int i = 2; i < ui.length; i++) {
+                        fones.add(new Fone(ui[i]));
+                    } agenda.addContato((ui[1]), fones);
+                    System.out.print(agenda);
+                } else if (ui[0].equals("getcontatos")) {
+                    System.out.print(agenda);
+                } else if (ui[0].equals("rmcontato")) {
+                    agenda.rmContato(ui[1]);
+                    System.out.println(agenda);
+                } else if (ui[0].equals("getcontato")) {
+                    agenda.getContato(ui[1]);
+                    System.out.print(agenda);
+                } else if (ui[0].equals("procurar")) {
+                    agenda.procurar(ui[1]);
+                    System.out.print(agenda);
+                } else if (ui[0].equals("favoritar")) {
+                    agenda.favoritar(ui[1]);
+                    System.out.println(agenda);
+                } else if (ui[0].equals("desfavoritar")) {
+                    agenda.desfavoritar(ui[1]);
+                    System.out.println(agenda);
+                } else if (ui[0].equals("favoritos")) {
+                    System.out.println(agenda.getFavoritos());
+                }    
+            } catch (RuntimeException e) {
+                System.out.println(e.getLocalizedMessage());
+            }
         } leitor.close();
     }
 }
