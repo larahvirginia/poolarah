@@ -1,0 +1,5 @@
+Fiz o projeto ContatoStar com o Pedro. Como sempre, abrimos uma sala no Google Meet para fazer o código. O principal ponto desse projeto era usar a questão da herança, fazendo com que a classe ContatoPlus herdasse os atributos e métodos da classe Contato, porém adicionando algumas coisas que seriam exclusivas, e aplicamos a mesma lógica para a Agenda e AgendaPlus.
+
+De início, foi um projeto tranquilo. Não existia muita coisa nova, apenas algumas adaptações do projeto passado, então não tivemos tantas dificuldades. A mais pontual, creio eu, talvez tenha sido porque entendemos um pouco errado a questão da herança nesse caso, imaginando que sempre passaríamos um Contato normal e não um Contato Plus. Mas nós levamos o código para a aula e o professor nos auxiliou quanto a isso, explicando melhor e permitindo que a gente finalizasse o código a partir das orientações feitas durante a aula e pelo Discord também.
+
+Levamos em média uns três dias, tirando mais ou menos duas horas para montar o código “bruto” e também para consertar alguns errinhos que a gente ia percebendo conforme testava todos os métodos do código.

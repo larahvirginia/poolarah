@@ -7,6 +7,13 @@ class Fone {
     public Fone (String label, String numero) {
         this.label = label;
         this.numero = numero;
+
+        String validos = "0123456789()-";
+        for (int i = 0; i < numero.length(); i++) {
+            if (!validos.contains("" + numero.charAt(i))) {
+                System.out.println("fail: esse número não é valido");
+            }
+        }
     }
     
     public Fone (String serial) {
@@ -23,15 +30,6 @@ class Fone {
         return numero;
     }
 
-    static public boolean validar (String numero) {
-        String validos = "0123456789()-";
-        for (int i = 0; i < numero.length(); i++) {
-            if (!validos.contains("" + numero.charAt(i))) {
-                return false;
-            }
-        } return true;
-    }
-
     public String toString() {
         return label + ":" + numero;
     }
@@ -41,6 +39,7 @@ class Contato {
     private String nome;
     private boolean favorito;
     private ArrayList<Fone> fones;
+    Fone fon;
 
     public Contato (String nome) {
         this.nome = nome;
@@ -52,9 +51,6 @@ class Contato {
     }
 
     public void addFone (String label, String numero) {
-        if(!Fone.validar(numero)) {
-            System.out.println("fail: esse número não é valido");
-        }
         fones.add(new Fone(label, numero));
     }
 
@@ -105,13 +101,12 @@ public class Ageenda {
         for (Contato contato : contatos.values()) {
             if (contato.toString().contains(padrao)) {
                 aux.add(contato);
-                return aux;
             }
-        } return null;
+        } return aux;
     }
 
     ArrayList <Contato> getContatos() {
-        return new ArrayList<Contatos>(contatos.values());
+        return new ArrayList<Contato>(contatos.values());
     }
 
     Contato getContato(String nome) {
@@ -176,8 +171,7 @@ public class Ageenda {
                 agenda.getContato(ui[1]);
                 System.out.print(agenda);
             } else if (ui[0].equals("procurar")) {
-                agenda.procurar(ui[1]);
-                System.out.print(agenda);
+                System.out.println(agenda.procurar(ui[1]));
             } else if (ui[0].equals("favoritar")) {
                 agenda.favoritar(ui[1]);
                 System.out.println(agenda);

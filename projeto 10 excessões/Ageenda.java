@@ -7,6 +7,12 @@ class Fone {
     public Fone (String label, String numero) {
         this.label = label;
         this.numero = numero;
+        String validos = "0123456789()-";
+        for (int i = 0; i < numero.length(); i++) {
+            if (!validos.contains("" + numero.charAt(i))) {
+                throw new RuntimeException("fail: número inválido");
+            }
+        }
     }
     
     public Fone (String serial) {
@@ -21,15 +27,6 @@ class Fone {
 
     String getNumero() {
         return numero;
-    }
-
-    static public boolean validar (String numero) {
-        String validos = "0123456789()-";
-        for (int i = 0; i < numero.length(); i++) {
-            if (!validos.contains("" + numero.charAt(i))) {
-                return false;
-            }
-        } return true;
     }
 
     public String toString() {
@@ -52,9 +49,6 @@ class Contato {
     }
 
     public void addFone (String label, String numero) {
-        if(!Fone.validar(numero)) {
-            throw new RuntimeException("fail: esse número não é valido");
-        }
         fones.add(new Fone(label, numero));
     }
 

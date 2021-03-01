@@ -166,7 +166,6 @@ public class Agenda {
         for (Contato c : contatos) {
             if (c.toString().contains(padrao)) {
                 aux.add(c);
-                System.out.println(aux);
             }
         } return aux;
     }
@@ -205,8 +204,7 @@ public class Agenda {
                 agenda.getContato(ui[1]);
                 System.out.print(agenda);
             } else if (ui[0].equals("procurar")) {
-                agenda.procurar(ui[1]);
-                System.out.print(agenda);
+                System.out.print(agenda.procurar(ui[1]));
             }
         } leitor.close();
     }
