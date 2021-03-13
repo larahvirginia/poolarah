@@ -1,0 +1,7 @@
+Pedro e eu fizemos o projeto do Twitter juntos, tomando como base praticamente tudo o que foi lecionado na disciplina de PDD.
+ 
+Nesse código, a lógica era bem simples. Tínhamos três classes que faziam coisas específicas. Tweet, que possuía seus atributos e um mapa para as pessoas que o curtiam. User, que além dos atributos também possuía mapas de seguindo e seguidores e uma timeline personalizada, com base nos usuários que ele segue, além de métodos padrões como seguir e deixar de seguir outro user e twittar. E o Sistema, que praticamente administrava os users.
+ 
+Diferente dos códigos referentes à Agenda e Contato, esse foi feito praticamente do zero, já que não existia nenhum similar para que pudéssemos reaproveitar alguma coisa. Todavia, uma vez que estamos no final da disciplina, temos muita bagagem e conteúdo para realizar esse projeto. Como o esperado, não demoramos muito nele, levamos uns três dias, tirando cerca de duas horas por dia para montar e resolver os errinhos que apareciam no decorrer do código.
+ 
+Em geral, nossas dificuldades foram praticamente todas por falta de atenção, nada ligado ao conteúdo, como por exemplo quanto esquecemos de inicializar os atributos do tweet lá no começo e a nossa timeline não mostrava nada. Mas fora isso, fizemos o código bastante seguros dos resultados.
